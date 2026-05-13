@@ -76,6 +76,13 @@
     .assessment-excellent,
     .assessment-moderate,
     .assessment-weak { font-size: 0.74rem; }
+    @media (max-width: 900px) {
+      .comparison-table { table-layout: auto; min-width: 720px; }
+      .comparison-table th:first-child,
+      .comparison-table td:first-child { width: auto; min-width: 120px; }
+      .table-section .container { width: 100%; padding: 0 1rem; }
+      .table-wrapper { overflow-x: auto; }
+    }
   </style>
 </head>
 <body>
@@ -109,7 +116,7 @@
 <!-- METHODOLOGY NOTE -->
 <section class="section section--pale" style="padding:48px 0;">
   <div class="container">
-    <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:2rem;">
+    <div class="g-3col">
       <div style="background:var(--white);border-radius:6px;padding:1.75rem;box-shadow:0 2px 16px rgba(13,27,46,0.06);">
         <div class="eyebrow" style="margin-bottom:0.5rem;">Scope</div>
         <h4 style="margin-bottom:0.625rem;">Seven Leading Carriers</h4>
