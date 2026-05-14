@@ -711,7 +711,7 @@ ul { list-style: none; }
   transition: box-shadow var(--ease);
 }
 .article-card:last-child { margin-bottom: 0; }
-.article-card:hover { box-shadow: 0 4px 20px rgba(31,58,14,0.08); }
+.article-card:hover { box-shadow: 0 4px 20px rgba(31,58,14,0.08); transform: none; }
 .article-card .eyebrow { margin-bottom: 0.625rem; }
 .article-card__title {
   font-size: clamp(1.2rem, 2.2vw, 1.6rem);
